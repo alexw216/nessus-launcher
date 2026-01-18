@@ -1,0 +1,20 @@
+[package]
+name = "nessus-cli"
+version = "0.1.1"
+edition = "2024"
+authors = ["Alex Wang <alexw216@gmail.com"]
+description = "CLI for launching Nessus scans using the nessus-launcher library."
+license = "MIT"
+repository = "https://github.com/alexw216/nessus-cli"
+homepage = "https://github.com/alexw216/nessus-cli"
+documentation = "https://docs.rs/nessus-cli"
+keywords = ["nessus", "security", "scanner", "automation", "network"]
+readme = "README.md"
+
+[dependencies]
+nessus-launcher = "0.1.1"
+clap = { version = "4.5", features = ["derive"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+dotenvy = "0.15"
